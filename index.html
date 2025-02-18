@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="stylesheet" href="stye.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 รายชื่อหนังสือ</h1>
+
+        <!-- ฟอร์มเพิ่มหนังสือ -->
+        <form id="book-form">
+            <input type="text" id="title" placeholder="ชื่อหนังสือ" required>
+            <input type="text" id="author" placeholder="ผู้แต่ง" required>
+            <button type="submit">เพิ่มหนังสือ</button>
+        </form>
+
+        <!-- ตารางแสดงรายการหนังสือ -->
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+
+    <script src="scpAPI.js"></script>
+</body>
+</html>
