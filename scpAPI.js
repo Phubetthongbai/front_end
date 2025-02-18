@@ -17,8 +17,8 @@ async function fetchBooks() {
                 <td>${book.title}</td>
                 <td>${book.author}</td>
                 <td>
-                    <button class="edit" onclick="editBook(${book.id})">✏️ แก้ไข</button>
-                    <button class="delete" onclick="deleteBook(${book.id})">🗑️ ลบ</button>
+                    <button class="edit" onclick="editBook(${book.id})"> แก้ไข</button>
+                    <button class="delete" onclick="deleteBook(${book.id})"> ลบ</button>
                 </td>
             `;
             bookList.appendChild(row);
